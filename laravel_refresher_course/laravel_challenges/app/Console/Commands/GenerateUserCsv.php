@@ -40,6 +40,6 @@ class GenerateUserCsv extends Command
             fclose($file);
         }
 
-        $this->info("CSV files created in $folderPath containing $totalUsers users.");
+        $this->info("CSV files created in $folderPath containing $chunkSize in each file for the total of $totalUsers users.");
     }
 }
